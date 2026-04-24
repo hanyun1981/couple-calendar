@@ -862,7 +862,7 @@
                         <div class="event-time">${timeDisplay}</div>
                         <div class="event-location-inline">📍 ${escapeHtml(event.location)}</div>
                         <div class="event-author-inline">${escapeHtml(event.author)}</div>
-                        <div class="event-duration-inline">⏱ ${duration}</div>
+                        <div class="event-duration-inline">${isPast ? '' : '⏱ ' + duration}</div>
                     </div>
                     <div class="event-actions">
                         <button class="btn-edit" onclick="editEvent('${event.id}')">編輯</button>
